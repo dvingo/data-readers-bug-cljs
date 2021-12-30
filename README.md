@@ -28,20 +28,16 @@ Compilation should fail with:
 Attempting to call unbound fn: #'hello-world.core/read-it
 ```
 
-# Replicate the issue with the ClojureScript compiler 1.11.4:
+# Works with the ClojureScript compiler 1.11.4:
 
 ``` bash
 npm run clean
 npm run cljs
 ```
 
-Compilation will fail with:
-```
-Unexpected error (IllegalStateException) compiling at (REPL:1).
-Attempting to call unbound fn: #'hello-world.core/read-it
-```
+Compilation will succeed.
 
-# Things work in clojure 1.10.3
+# Works in Clojure 1.10.3
 
 ``` bash
 clojure -Srepro -M -e "(require '[hello-world.main :as m]) (m/init)"
