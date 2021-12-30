@@ -1,0 +1,8 @@
+{:deps
+ {:aliases [:shadow]}
+
+ :builds
+ {:main {:target :browser
+         :output-dir "resources/public/js/main"
+         :asset-path "/js/main"
+         :modules {:main {:init-fn hello-world.core/init}}}}}

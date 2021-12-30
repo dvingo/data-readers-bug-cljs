@@ -1,0 +1,14 @@
+{
+  "name": "data-readers-bug",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "shadow": "clj -Srepro -A:shadow -M --main shadow.cljs.devtools.cli watch main",
+    "cljs": "clj -Srepro -M --main cljs.main --compile hello-world.core --repl",
+    "clean": "rm -rf out .shadow-cljs .cpcache"
+  },
+  "dependencies": {
+    "shadow-cljs": "^2.16.10"
+  }
+}
