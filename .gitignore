@@ -2,3 +2,5 @@ out
 .cpcache
 .shadow-cljs
 node_modules
+resources/public/*
+!resources/public/index.html

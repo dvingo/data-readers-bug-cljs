@@ -4,5 +4,4 @@
 
 (defn foo [] #my-data/item "hello")
 
-(defn init []
-  (.log js/console "INIT : " (foo)))
+(defn init [] (.log js/console "INIT: " (foo)))

@@ -1,6 +1,7 @@
 {:deps
  {:aliases [:shadow]}
 
+ :dev-http {8018 "resources/public"}
  :builds
  {:main {:target :browser
          :output-dir "resources/public/js/main"
