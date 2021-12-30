@@ -3,7 +3,7 @@ This repo attempts to setup a simple data reader for use in ClojureScript, follo
 https://clojure.org/reference/reader#tagged_literals
 
 The goal is to have the tagged literal `#my-data/item "hello"`
-be read by the reader and invoke the function `hello-world.core/read-it` which is setup to always return `500`.
+be read by the reader and invoke the function `hello-world.readers/read-it` which is setup to always return `500`.
 
 # Replicate the issue with shadow-cljs 2.16.10:
 
