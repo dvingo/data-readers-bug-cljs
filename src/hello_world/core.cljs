@@ -1,4 +1,6 @@
-(ns hello-world.core)
+(ns hello-world.core
+  ;; either explicitly require them or add to shadow-cljs devtools->preloads
+  (:require [hello-world.readers]))
 
 (defn read-it [form] 500)
 
